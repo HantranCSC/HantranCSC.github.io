@@ -16,9 +16,11 @@
       defer
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
-    <title>Han Tran - Gallery Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Han Tran - Home Page</title>
   </head>
   <body>
     <header class="header-section">
@@ -30,122 +32,48 @@
 
       <ul class="nav-links">
         <li><a href="about.html" class="nav-link2">About</a></li>
-        <li><a href="#" class="nav-link underline">Gallery</a></li>
-        <li><a href="blog.html" class="nav-link2">Blog</a></li>
+        <li><a href="gallery.html" class="nav-link2">Gallery</a></li>
+        <li><a href="#" class="nav-link underline">Blog</a></li>
         <li><a href="resume.html" class="nav-link2 cta">Resume</a></li>
       </ul>
     </header>
-
     <main>
       <section class="hero-section">
         <div class="hero">
           <div class="bio">
             <h1 class="hero-heading">
-              Me Gallery<img
-                class="underline-heading-gallery"
+              Me Blogs<img
+                class="underline-heading-blog"
                 src="img/underline2.png"
                 alt="Underline"
               />
             </h1>
-            <h2 class="hero-subheading">with friends and family</h2>
+            <h2 class="hero-subheading"></h2>
           </div>
           <div class="about-photo-box">
-            <div class="gallery-photo" id="animation container">
+            <div class="blog-photo" id="animation container">
               <script>
                 var animation = bodymovin.loadAnimation({
                   container: document.getElementById("animation container"),
-                  path: "taking-photo.json",
+                  path: "writing-blog.json",
                   render: "svg",
                   loop: true,
                   autoplay: true,
-                  name: "Software Engineer animation",
+                  name: "Blog Writing animation",
                 });
               </script>
             </div>
           </div>
         </div>
       </section>
+      
 
       <section class="about-section">
-        <h2 class="time-period-heading">Photos (15)</h2>
-      </section>
-
-      <section class="photo-section">
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-1.jpg"
-          alt="My photo 1"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-2.jpg"
-          alt="My photo 2"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-3.jpg"
-          alt="My photo 3"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/img15.jpg"
-          alt="My parents' photo"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-4.jpg"
-          alt="My photo 4"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-5.jpg"
-          alt="My photo 5"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-6.jpg"
-          alt="My photo 6"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-7.jpg"
-          alt="My photo 7"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-8.jpg"
-          alt="My photo 8"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-9.jpg"
-          alt="My photo 9"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-10.jpg"
-          alt="My photo 10"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-11.jpg"
-          alt="My photo 11"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-12.jpg"
-          alt="My photo 12"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-13.jpg"
-          alt="My photo 13"
-        />
-        <img
-          class="my-gallery"
-          src="attachments/my-photo-14.jpg"
-          alt="My photo 14"
-        />
+        <h2 class="time-period-heading">No Blog Found</h2>
+        <div class="container grid">
+          <p class="period-description">
+            Please come back another day for more updates
+          </p>
       </section>
     </main>
     <footer class="footer">
@@ -204,8 +132,8 @@
       </div>
       <ul class="footer-links">
         <li><a href="about.html" class="footer-link2">About</a></li>
-        <li><a href="#" class="footer-link">Gallery</a></li>
-        <li><a href="blog.html" class="footer-link2">Blog</a></li>
+        <li><a href="gallery.html" class="footer-link2">Gallery</a></li>
+        <li><a href="#" class="footer-link">Blog</a></li>
         <li><a href="resume.html" class="footer-link2">Resume</a></li>
       </ul>
       <p class="copyright-text">Han Tran &#169; 2023</p>
